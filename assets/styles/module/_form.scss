@@ -1,0 +1,74 @@
+.container-form {
+  max-width: 540px;
+  padding-bottom: 20px;
+
+  @media (max-width: $mobile) {
+    width: 90vw;
+  }
+
+  &__offer {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    background: $accent-blue;
+    box-shadow: 0px 8px 0px $color-shadow;
+
+    @include border-radius(10px);
+
+    span {
+        @extend %font-bold;
+    }
+
+    @media (max-width: $mobile) {
+      height: 50px;
+      line-height: 1.5em;
+      padding: 50px;
+      text-align: center;
+    }
+  }
+
+  &__register {
+    background: $bg-primary;
+    box-shadow: 0px 8px 0px $color-shadow;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+
+    @include border-radius(10px);
+
+    input {
+      height: 60px;
+      margin-bottom: 20px;
+      text-indent: 30px;
+      width: 100%;
+
+      @include border(1px, solid, $secondary);
+      @include border-radius(5px);
+
+      &::placeholder {
+        color: $neutral-dark;
+        font-size: 1em;
+        @extend %font-medium;
+      }
+
+      &:focus {
+        @include border(1px, solid, $accent-blue);
+      }
+    }
+  }
+
+  &__info {
+    color: $neutral-grayish;
+    font-size: 10px;
+    text-align: center;
+    @extend %font-medium;
+
+    a {
+      color: $text-primary-red;
+      @extend %font-bold;
+    }
+  }
+}

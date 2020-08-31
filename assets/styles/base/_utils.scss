@@ -1,0 +1,31 @@
+%font-family {
+    font-family: 'Poppins', sans-serif;
+}
+
+%font-regular {
+  font-weight: 400;
+}
+
+%font-medium {
+  font-weight: 500;
+}
+
+%font-semi-bold {
+  font-weight: 600;
+}
+
+%font-bold {
+  font-weight: 700;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+@mixin border-radius($size) {
+  border-radius: $size;
+}
+
+@mixin border($size, $type, $color) {
+  border: $size $type $color;
+}

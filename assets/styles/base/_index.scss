@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  align-items: center;
+  background-color: $bg-primary-red;
+  background-image: url('../images/bg-intro-desktop.png');
+  color: $text-primary;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+  width: 100vw;
+  @extend %font-family;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+button,
+input {
+  outline: 0;
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
