@@ -18,8 +18,13 @@ body {
   height: 100vh;
   justify-content: center;
   overflow-x: hidden;
+  padding: 10px;
   width: 100vw;
   @extend %font-family;
+
+  @media (max-width: 720px) {
+    background-image: url('../images/bg-intro-mobile.png');
+  }
 }
 
 ol,

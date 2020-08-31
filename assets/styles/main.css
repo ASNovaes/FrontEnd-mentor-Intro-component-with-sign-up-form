@@ -57,7 +57,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   overflow-x: hidden;
+  padding: 10px;
   width: 100vw;
+}
+
+@media (max-width: 720px) {
+  body {
+    background-image: url("../images/bg-intro-mobile.png");
+  }
 }
 
 ol,
@@ -127,16 +134,23 @@ a {
   width: 100%;
   height: auto;
   padding: 40px;
+  position: relative;
+  text-align: end;
   border-radius: 10px;
 }
 
 .container-form__register input {
   height: 60px;
   margin-bottom: 20px;
+  padding-right: 70px;
   text-indent: 30px;
   width: 100%;
   border: 1px solid #dedede;
   border-radius: 5px;
+}
+
+.container-form__register input :nth-child(4) {
+  margin-bottom: 0;
 }
 
 .container-form__register input::-webkit-input-placeholder {
@@ -205,5 +219,12 @@ a {
     padding: 90px;
     margin: 0;
   }
+}
+
+.showErrorMessage {
+  color: #ff7a7a;
+  font-size: 10px;
+  position: relative;
+  top: -20px;
 }
 /*# sourceMappingURL=main.css.map */

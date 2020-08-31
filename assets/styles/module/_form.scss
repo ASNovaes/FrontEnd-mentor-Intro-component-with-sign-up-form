@@ -19,7 +19,7 @@
     @include border-radius(10px);
 
     span {
-        @extend %font-bold;
+      @extend %font-bold;
     }
 
     @media (max-width: $mobile) {
@@ -36,17 +36,24 @@
     width: 100%;
     height: auto;
     padding: 40px;
+    position: relative;
+    text-align: end;
 
     @include border-radius(10px);
 
     input {
       height: 60px;
       margin-bottom: 20px;
+      padding-right: 70px;
       text-indent: 30px;
       width: 100%;
 
       @include border(1px, solid, $secondary);
       @include border-radius(5px);
+
+      :nth-child(4) {
+        margin-bottom: 0;
+      }
 
       &::placeholder {
         color: $neutral-dark;

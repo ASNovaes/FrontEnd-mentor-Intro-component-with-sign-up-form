@@ -23,27 +23,62 @@
     </section>
 
     <section class="container-form">
-      <div class="container-form__offer"><p><span>Try it free 7 days</span> then $20/mo. thereafter</p></div>
+      <div class="container-form__offer">
+        <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
       <form
         class="container-form__register"
         action="/"
         method="GET"
         name="form-register"
+        id="formRegister"
       >
-        <input type="text" name="first-name" placeholder="First Name" />
-        <input type="text" name="first-name" placeholder="Last Name" />
-        <input type="email" name="first-name" placeholder="Email Adress" />
-        <input type="password" name="first-name" placeholder="First Name" />
-        <button class="register__btn-submit">Claim your free trial</button>
-        <p class="container-form__info"
-        >By clicking the button, you are agreeing to our <a>Terms and
-          Services</a></p
-      >
+        <input
+          type="text"
+          name="firstName"
+          placeholder="First Name"
+          id="fieldFirstName"
+          maxlength="30"
+        />
+        
+        <span></span>
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+          id="fieldLastName"
+          maxlength="30"
+        />
+        
+        <span></span>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Adress"
+          id="fieldEmail"
+          maxlength="50"
+        />
+        
+        <span></span>
+
+        <input
+          type="password"
+          name="password"
+          placeholder="password"
+          id="fieldPassword"
+          maxlength="10"
+        />
+        <span></span>
+        <button class="register__btn-submit" id="btn-submit">
+          Claim your free trial
+        </button>
+        <p class="container-form__info">
+          By clicking the button, you are agreeing to our
+          <a>Terms and Services</a>
+        </p>
       </form>
-      
     </section>
   </body>
   <script src="assets/scripts/index.js"></script>
 </html>
-
-
